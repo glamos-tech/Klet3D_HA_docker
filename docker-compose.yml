@@ -1,0 +1,12 @@
+services:
+  klet3d:
+    build:
+      context: .
+      args:
+        FLOORPLAN_ID: your-floorplan-id-here
+        LICENSE_KEY: your-license-key-here
+        TOKEN: your-token-here
+        HA_URL: your-home-assistant-url-here
+    image: klet3d:latest
+    ports:
+      - "8080:8099"
